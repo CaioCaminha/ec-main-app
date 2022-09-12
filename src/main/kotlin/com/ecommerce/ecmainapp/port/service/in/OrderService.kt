@@ -4,7 +4,6 @@ import com.ecommerce.ecmainapp.domain.Order
 import com.ecommerce.ecmainapp.port.`in`.OrderPortInterface
 import com.ecommerce.ecmainapp.port.service.out.SendOrderService
 import org.slf4j.LoggerFactory
-import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Component
 import java.net.URI
