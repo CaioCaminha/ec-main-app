@@ -16,7 +16,7 @@ class OrderService(
 
     override fun createOrder(order: Order): ResponseEntity<Any> {
         try{
-            if(sendOrderService.sendToOrderQueue(order)){
+            if(sendOrderService.sendOrderToQueue(order)){
                 logger.info("Order Successfully created")
                 return ResponseEntity.created(URI("")).body(order)
             }else{

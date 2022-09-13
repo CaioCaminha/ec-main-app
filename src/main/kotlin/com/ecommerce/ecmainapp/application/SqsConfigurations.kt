@@ -8,6 +8,7 @@ import com.amazonaws.services.sqs.AmazonSQSAsyncClientBuilder
 import com.amazonaws.services.sqs.AmazonSQSClient
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder
 import org.apache.catalina.authenticator.BasicAuthenticator.BasicCredentials
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.cloud.aws.messaging.core.QueueMessagingTemplate
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -16,8 +17,11 @@ import javax.crypto.SecretKey
 
 @Configuration
 class SqsConfigurations(
+    @Value("\${aws.access.key}")
     val accessKey:String,
+    @Value("\${aws.secret.key}")
     val secretKey: String,
+    @Value("\${aws.config.region}")
     val region: String
 ) {
 
