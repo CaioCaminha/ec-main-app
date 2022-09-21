@@ -1,4 +1,4 @@
-package com.ecommerce.ecmainapp.adapter.out.dto
+package com.ecommerce.ecmainapp.adapters.out.dto
 
 import lombok.Data
 import java.util.UUID

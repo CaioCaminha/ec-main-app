@@ -1,4 +1,4 @@
-package com.ecommerce.ecmainapp.port.out
+package com.ecommerce.ecmainapp.ports.out
 
 import com.ecommerce.ecmainapp.domain.Order
 

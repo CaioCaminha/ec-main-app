@@ -1,0 +1,20 @@
+cloud:
+  aws:
+    region:
+      static: us-east-1
+      auto: false
+    credentials:
+      access-key: AKIAQNPL25DHJQTCTQKX
+      secret-key: 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
+    sqs:
+      order:
+        end-point:
+          uri: https://sqs.us-east-1.amazonaws.com/028948752590/ecommerce-order
+    s3:
+      product:
+          bucket: ecommerceapplication-product-images
+          bucket-base-url: https://ecommerceapplication-product-images.s3.amazonaws.com
+
+spring:
+  main:
+    allow-bean-definition-overriding: true

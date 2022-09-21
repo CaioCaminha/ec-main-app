@@ -2,10 +2,7 @@ package com.ecommerce.ecmainapp.domain
 
 class Order(
     val products: List<Product>,
-    val user: Account
+    val userId: String
 ) {
 
-    init {
-        val address: Address = user.address
-    }
 }

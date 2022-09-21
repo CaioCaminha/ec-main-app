@@ -1,11 +1,9 @@
-package com.ecommerce.ecmainapp.port.`in`
+package com.ecommerce.ecmainapp.ports.`in`
 
 import com.ecommerce.ecmainapp.domain.Order
-import com.ecommerce.ecmainapp.domain.Product
 import org.springframework.http.ResponseEntity
-import java.util.Optional
 
-interface OrderPortInterface {
+interface OrderControllerPortInterface {
 
     fun createOrder(order: Order): ResponseEntity<Any>
 
